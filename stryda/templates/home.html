@@ -1,0 +1,156 @@
+{% extends "layout.html" %}
+{% block title %}
+HOME
+{% endblock %}
+
+{% block content %}
+<div class="card border-top border-bottom">
+<h3 class="text-warning text-center">Welcome {{email}}</h3>
+</div>
+ <div class="px-4 py-5 my-5 text-center text-white">
+    <h1 class="display-5 fw-bold ">STRYDA AUTOMATA</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Helping your business to key in to the rapid digitization of the global workspace and streamlining your marketing efforts leaving you freedom to invest your time into growing other parts of your business.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <button type="button" class="btn btn-warning btn-lg px-4 gap-3">Get started</button>
+        <button type="button" class="btn btn-outline-warning btn-lg px-4">Register</button>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+<div class="border h-100 p-5 text-white border-dark bg-warning rounded-2">
+<div class="row align-items-md-stretch">
+      <div class="col-md-6 mb-1 mb-sm-3">
+        <div class="h-100 p-5 text-white bg-dark border border-dark rounded-3">
+          <h2>Send us an e-mail</h2>
+          <p>Send us an e-mail stating your automation needs and a reply will be sent to you ASAP, presenting to you thr possible ways to streamline your business</p>
+          <button class="btn btn-outline-light mt-5" type="button"><a href="/mail">Send mail</a></button>
+        </div>
+      </div>
+      <div class="col-md-6 mb-1 mb-sm-3">
+        <div class="h-100 p-5 bg-dark text-white border border-dark rounded-3">
+          <h2>Give us a call</h2>
+          <p>Give us a call today, and organically scale your business by automating redundant tasks and leaving you time to build, plan and strategize</p>
+          <button class="btn btn-outline-light mt-5" type="button">Call us</button>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+
+
+
+<div class="container">
+   <div class="container px-4 py-5" id="custom-cards">
+    <h2 class="pb-2 border-bottom text-warning display-5">Our Services</h2>
+
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5 border-bottom">
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-warning rounded-5 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-dark text-shadow-5">
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">E-mail automation</h2>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                <small>Earth</small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                <small>3d</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class=" card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-warning text-shadow-5">
+            <h2 class="pt-3 mt-5 mb-4 display-6 lh-1 fw-bold">Whatsapp message and status update automation</h2>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                <small>Pakistan</small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                <small>4d</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="bg-warning card card-cover h-100 overflow-hidden text-dark bg-warning rounded-5 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-5">
+            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">AI powered chatbots</h2>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                <small>California</small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                <small>5d</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<div class="container text-white">
+     <div class="row featurette my-3">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
+        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+      </div>
+      <div class="col-md-5">
+        <img class="bd-placeholder-img bd-placeholder-img-lg rounded-3 featurette-image img-fluid mx-auto" width="500" height="500" src="{{ url_for('static', filename='cloud.jpg') }}" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></img>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette my-3">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
+        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img class="bd-placeholder-img bd-placeholder-img-lg rounded-3 featurette-image img-fluid mx-auto" width="500" height="500" src="{{ url_for('static', filename='cloud.jpg') }}" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></img>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette my-3">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+      </div>
+      <div class="col-md-5">
+        <img class="bd-placeholder-img bd-placeholder-img-lg rounded-3 featurette-image img-fluid mx-auto" width="500" height="500" src="{{ url_for('static', filename='cloud.jpg') }}" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></img>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+</div>
+
+
+
+
+
+</div>
+{% endblock %}

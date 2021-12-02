@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap-icons.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='heroes.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='fontawesome\css\all.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='native.css') }}">
+   
+    <title> Login </title>
+</head>
+<body class = "bg-warning">
+
+<form action="{{url_for('admin.register_view')}}" method="post">
+
+
+<div class="card text-white bg-dark w-75 w-sm-75 mx-auto" id = "form-card">
+    <span class = "text-warning text-center lead display-4">Register</span>
+    <div class="container">
+ <div class="card-body">
+   <div class="form-group">
+     <label for="email" class="form-label text-inverse">E-mail</label>
+     <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelpId" placeholder="enter a valid email">
+   </div>
+   <div class="form-group">
+     <label for="password" class="form-label text-inverse">Password</label>
+     <input type="password" class="form-control" name="password" id="password" aria-describedby="emailHelpId" placeholder="password">
+   </div>
+   <button type="submit" class="btn btn-outline-warning text-warning my-3">Login</button>
+</div>
+    </div>
+ 
+  </div>
+</div>
+
+
+</form>
+
+
+    <script src="{{ url_for('static', filename='bootstrap.bundle.min.js') }}"></script>
+</body>
+</html>
